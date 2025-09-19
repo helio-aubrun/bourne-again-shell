@@ -1,0 +1,7 @@
+cp premiertexte double
+
+ls -l premiertexte double
+
+mv double introduction
+
+mv remplace le fichier d'origine alors que cp garde les 2 fichiers

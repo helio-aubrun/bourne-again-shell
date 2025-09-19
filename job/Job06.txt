@@ -1,0 +1,3 @@
+echo "Wewewe" > output.txt
+
+echo "wazaaaaa" >> output.txt

@@ -1,0 +1,5 @@
+echo "Mot de passe: 12345" > secret.txt
+
+ls -l secret.txt
+
+chmod o=r secret.txt

@@ -1,0 +1,10 @@
+cat > premiertexte <<'EOF'
+Wewewew.
+One piece c est la vie.
+EOF
+
+less premiertexte
+
+ls -l premiertexte
+
+nano premiertexte

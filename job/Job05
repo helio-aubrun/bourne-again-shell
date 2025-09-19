@@ -1,0 +1,19 @@
+cat > exemple.txt << 'EOF'
+luffy
+kidd
+law
+buggy
+shanks
+teach
+xebec
+loki
+EOF
+
+
+grep "Kidd" exemple.txt
+
+sort exemple.txt
+
+head exemple.txt
+
+tail exemple.txt

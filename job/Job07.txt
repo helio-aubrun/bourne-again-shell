@@ -1,0 +1,11 @@
+mkdir -p projet/sousdossier1 projet/sousdossier2
+echo "yes sir" > projet/fichier1.txt
+echo "wewewe" > projet/sousdossier1/fichier2.txt
+echo "wazaaaaa" > projet/sousdossier2/fichier3.txt
+echo "tu etais l elu " > projet/sousdossier2/fichier4.txt
+
+find projet/ -type f -name "*.txt"
+
+file projet/fichier1.txt
+
+grep "yes" projet/**/*.txt

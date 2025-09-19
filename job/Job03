@@ -1,0 +1,7 @@
+mkdir essai
+
+mv introduction essai/
+
+cp premiertexte essai/copie
+
+ls -l essai/

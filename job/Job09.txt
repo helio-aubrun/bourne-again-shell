@@ -1,0 +1,7 @@
+nom="Helio"
+echo "Bonjour, $nom !"
+
+for i in {1..10}
+do
+  echo "Nombre : $i"
+done

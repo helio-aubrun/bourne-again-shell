@@ -1,0 +1,7 @@
+rmdir essai/
+rmdir: échec de suppression de 'essai/': Le dossier n'est pas vide
+Il faut que le dossier soit vide pour le supprimer
+
+rm essai/*
+
+rmdir essai/
