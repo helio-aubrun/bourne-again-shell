@@ -16,7 +16,7 @@ essentielles.
 
 Une **ligne de commande**, c'est une instruction que l'on écrit pour
 dire à l'ordinateur ce qu'il doit faire.\
-👉 Exemple :\
+👉 Exemple :
 - Si vous tapez `ls` (sous Linux ou macOS), l'ordinateur vous renvoie la
 liste des fichiers présents dans un dossier.\
 - C'est comme **donner un ordre écrit** à l'ordinateur, au lieu de
@@ -36,7 +36,7 @@ la demande.
 Le **terminal** est une **fenêtre spéciale** qui vous permet de taper
 ces fameuses lignes de commande.
 
-👉 Exemple concret :\
+👉 Exemple concret :
 - Sous Windows, on parle de **Invite de commandes** ou **PowerShell**.\
 - Sous macOS et Linux, l'application s'appelle simplement **Terminal**.
 
@@ -51,7 +51,7 @@ ces fameuses lignes de commande.
 Le **Shell** est le **programme qui reçoit vos commandes** dans le
 terminal et les traduit pour l'ordinateur.
 
-👉 Exemple :\
+👉 Exemple :
 - Si vous tapez `ls`, le shell comprend que vous voulez la liste des
 fichiers et demande au système de vous répondre.
 
@@ -99,7 +99,7 @@ restaurants, qui connaît le plus de recettes.
 -   La **ligne de commande** = ce que **vous tapez** (la commande au
     serveur).
 
-👉 Exemple :\
+👉 Exemple :
 - Vous ouvrez un terminal → une fenêtre s'ouvre.\
 - Le shell (souvent Bash) s'exécute dans cette fenêtre.\
 - Vous tapez `ls` → Bash comprend, demande au système, et vous affiche
