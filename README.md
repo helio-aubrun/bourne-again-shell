@@ -120,7 +120,3 @@ la liste des fichiers.
     pour être réutilisées.
 
 ------------------------------------------------------------------------
-
-👉 Avec ces métaphores (restaurant, comptoir, serveur, commandes), même
-une personne qui n'a jamais vu un terminal peut comprendre la logique
-derrière la ligne de commande.
