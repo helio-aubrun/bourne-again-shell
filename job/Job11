@@ -1,35 +1,26 @@
 #!/bin/bash
 
-# Fichiers utilisés
 NEW_INVENTORY="inventory.txt"
 CURRENT_INVENTORY="current_inventory.txt"
 REPORT="inventory_report.txt"
 
-# Vérifier que les fichiers existent
 if [[ ! -f "$NEW_INVENTORY" || ! -f "$CURRENT_INVENTORY" ]]; then
   echo "Erreur : Assurez-vous que $NEW_INVENTORY et $CURRENT_INVENTORY existent."
   exit 1
 fi
 
-# Copier l'inventaire courant dans un fichier temporaire
 cp "$CURRENT_INVENTORY" temp_inventory.txt
 
-# Lire le fichier inventory.txt ligne par ligne
 while IFS=',' read -r title qty price; do
-  # Vérifier si le livre existe déjà dans l'inventaire courant
   if grep -q "^$title," temp_inventory.txt; then
-    # Mettre à jour la quantité avec sed
     sed -i "s/^$title,.*/$title,$qty,$price/" temp_inventory.txt
   else
-    # Ajouter le livre s'il n'existe pas
     echo "$title,$qty,$price" >> temp_inventory.txt
   fi
 done < "$NEW_INVENTORY"
 
-# Trier et générer le rapport final
 sort temp_inventory.txt > "$REPORT"
 
-# Mettre à jour le fichier courant
 mv temp_inventory.txt "$CURRENT_INVENTORY"
 
 echo "✅ Rapport généré : $REPORT"
