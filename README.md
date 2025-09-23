@@ -120,3 +120,32 @@ la liste des fichiers.
     pour être réutilisées.
 
 ------------------------------------------------------------------------
+
+# 📑 Tableau récapitulatif des commandes
+
+| **Commande** | **Explication** | **Cas pratique** |
+|--------------|-----------------|------------------|
+| `ls` | Liste les fichiers et répertoires | `ls -l` → affiche les fichiers avec détails (taille, droits, date) |
+| `cat fichier.txt` | Affiche le contenu d’un fichier | `cat premiertexte` → montre le contenu du fichier |
+| `less fichier.txt` | Affiche le contenu page par page (sans éditer) | `less premiertexte` |
+| `nano fichier.txt` | Éditeur de texte simple en ligne de commande | `nano premiertexte` |
+| `vim fichier.txt` | Éditeur avancé en ligne de commande | `vim premiertexte` |
+| `rm fichier.txt` | Supprime un fichier | `rm premiertexte` |
+| `rmdir dossier/` | Supprime un dossier **vide** | `rmdir essai/` |
+| `rm -r dossier/` | Supprime un dossier et tout son contenu | `rm -r essai/` |
+| `cp source dest` | Copie un fichier | `cp premiertexte double` |
+| `mv source dest` | Déplace ou renomme un fichier/dossier | `mv double introduction` |
+| `mkdir dossier/` | Crée un répertoire | `mkdir essai/` |
+| `grep "mot" fichier` | Recherche un mot ou motif dans un fichier | `grep "pomme" exemple.txt` |
+| `sort fichier.txt` | Trie les lignes d’un fichier par ordre alphabétique | `sort exemple.txt` |
+| `head -n 5 fichier.txt` | Affiche les 5 premières lignes d’un fichier | `sort exemple.txt \| head -n 5` |
+| `tail -n 5 fichier.txt` | Affiche les 5 dernières lignes d’un fichier | `sort exemple.txt \| tail -n 5` |
+| `echo "texte"` | Affiche un texte dans le terminal | `echo "Bonjour"` |
+| `echo "texte" > fichier.txt` | Écrit du texte dans un fichier (remplace le contenu) | `echo "Hello" > output.txt` |
+| `echo "texte" >> fichier.txt` | Ajoute du texte à la fin du fichier | `echo "Encore une ligne" >> output.txt` |
+| `find chemin -name "*.txt"` | Recherche des fichiers selon critères | `find projet/ -type f -name "*.txt"` |
+| `file fichier.txt` | Indique le type de fichier | `file secret.txt` |
+| `chmod o=r fichier.txt` | Modifie les permissions (lecture seule pour "autres") | `chmod o=r secret.txt` |
+| `awk -F, '{print $1, $2*$3}' fichier.txt` | Permet de parcourir un fichier et faire des calculs | Calculer montant total d’une facture |
+| `sed 's/ancienne/nouvelle/' fichier.txt` | Remplace du texte dans un fichier | Modifier quantité d’un livre |
+| `read variable` | Récupère une saisie utilisateur dans un script | `read titre` puis `grep "$titre" facture.txt` |
