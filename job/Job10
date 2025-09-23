@@ -1,0 +1,11 @@
+nano ~/.bashrc
+
+à la fin du fichier ajouter cd ~/Desktop
+
+source ~/.bashrc
+
+nano ~/.bashrc
+
+à la fin du fichier ajouter alias godocs='cd ~/Documents'
+
+source ~/.bashrc
